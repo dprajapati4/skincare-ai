@@ -52,16 +52,17 @@ const Form = () => {
   return (
     <form
       onSubmit={submitForm}
-      className="flex flex-col gap-4 max-w-md mx-auto"
+      className="flex flex-col gap-4 bg-sand p-6 rounded-xl shadow-md min-w-md mx-auto "
     >
-      <label htmlFor="skinType">Choose Skin Type </label>
+      <label className="black text-ink" htmlFor="skinType">Choose Skin Type </label>
       <select
         id="skinType"
         name="skinType"
         value={skinType}
         onChange={(e) => setSkinType(e.target.value)}
         required
-        className="flex items-center rounded-md bg-white p-1 outline-1 -outline-offset-1 outline-gray-300"
+        // className="flex items-center rounded-md bg-white p-1 outline-1 -outline-offset-1 outline-gray-300"
+        className="w-full p-2 border border-gray-300  bg-white rounded"
       >
         <option className="text-center text-gray-400  sm:text-sm/6" value="">
           -- Select --
@@ -128,7 +129,9 @@ const Form = () => {
 
       <button
         type="submit"
-        className="mt-4 bg-blue-500 text-white py-2 px-4 rounded"
+        // className="mt-4 bg-blue-500 text-white py-2 px-4 rounded"
+        className=" mt-4 bg-gold text-ink font-semibold px-4 py-2 rounded hover:bg-mauve transition"
+
       >
         Generate Routine
       </button>

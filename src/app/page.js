@@ -4,10 +4,14 @@ import Form from "../components/Form";
 
 export default function Home() {
   return (
-    <main className="bg-warmSand min-h-screen flex flex-col items-center justify-center text-charcoal">
-      <h1 className="text-deepMauve text-3xl font-bold mb-4">
-        Find a skincare routine for your skin type!
+    <main className=" min-h-screen flex flex-col items-center justify-center text-charcoal">
+      <h1 className="text-mauve text-4xl font-semibold mb-6">
+        Discover Your Perfect Skincare Routine
       </h1>
+      <p className="text-lg text-ink mb-12 text-center">
+        Find personalized skincare products that suit your skin&apos;s unique
+        needs. Let&apos;s get started!
+      </p>
       <Form />
     </main>
   );
