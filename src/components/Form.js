@@ -50,7 +50,10 @@ const Form = () => {
   };
 
   return (
-    <form onSubmit={submitForm} className="flex flex-col gap-4 max-w-md mx-auto">
+    <form
+      onSubmit={submitForm}
+      className="flex flex-col gap-4 max-w-md mx-auto"
+    >
       <label htmlFor="skinType">Choose Skin Type </label>
       <select
         id="skinType"
@@ -58,10 +61,13 @@ const Form = () => {
         value={skinType}
         onChange={(e) => setSkinType(e.target.value)}
         required
+        className="flex items-center rounded-md bg-white p-1 outline-1 -outline-offset-1 outline-gray-300"
       >
-        <option value="">-- Select --</option>
+        <option className="text-center text-gray-400  sm:text-sm/6" value="">
+          -- Select --
+        </option>
         {skinTypeOptions.map((option) => (
-          <option key={option} value={option}>
+          <option className="text-center" key={option} value={option}>
             {capitalize(option)}
           </option>
         ))}
@@ -69,10 +75,11 @@ const Form = () => {
 
       <fieldset>
         <legend>Select Skin Concerns</legend>
+
         {skinConcerns.map((concern) => (
           <label key={concern} className="block">
-            {capitalize(concern)}
             <input
+              className="mx-2"
               type="checkbox"
               value={concern}
               checked={concerns.includes(concern)}
@@ -83,24 +90,32 @@ const Form = () => {
         ))}
       </fieldset>
 
-      <label htmlFor="budget">
-        Budget ($)
-        <input
-          type="number"
-          id="budget"
-          name="budget"
-          value={budget}
-          required
-          min="1"
-          onChange={(e) => setBudget(e.target.value)}
-        />
-      </label>
+      <label htmlFor="budget">Budget</label>
+      <div className="mt-1">
+        <div className="flex items-center rounded-md bg-white pl-3 outline-1 -outline-offset-1 outline-gray-300 has-[input:focus-within]:outline-2 has-[input:focus-within]:-outline-offset-2 has-[input:focus-within]:outline-indigo-600">
+          <div className="shrink-0 text-base text-gray-500 select-none sm:text-sm/6">
+            $
+          </div>
+          <input
+            type="number"
+            id="budget"
+            name="budget"
+            value={budget}
+            required
+            min="1"
+            onChange={(e) => setBudget(e.target.value)}
+            className="block min-w-0 grow py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6 placeholder:text-gray-400 focus:outline-none sm:text-sm/6"
+            placeholder="0.00"
+          />
+        </div>
+      </div>
 
       <fieldset>
         <legend>Select skincare preferences </legend>
         {preferences.map((pref) => (
           <label key={pref.trim()} className="block">
             <input
+              className="mx-2 "
               type="checkbox"
               value={pref.trim()}
               checked={prefs.includes(pref.trim())}
@@ -111,7 +126,10 @@ const Form = () => {
         ))}
       </fieldset>
 
-      <button type="submit"  className="mt-4 bg-blue-500 text-white py-2 px-4 rounded" >
+      <button
+        type="submit"
+        className="mt-4 bg-blue-500 text-white py-2 px-4 rounded"
+      >
         Generate Routine
       </button>
     </form>
