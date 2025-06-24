@@ -12,7 +12,7 @@ export const PREFERENCES = [
   "vegan",
   "affordable",
   "dermatologist-tested",
-  " cruelty-free",
+  "cruelty-free",
   "sustainable packaging",
   "safe for sensitive skin",
 ];
