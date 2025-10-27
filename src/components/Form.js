@@ -5,13 +5,16 @@ import Routine from "./Routine";
 import SelectInput from "./SelectInput";
 import CheckboxGroup from "./CheckboxGroup";
 import BudgetInput from "./BudgetInput";
+import Skeleton from "./Skeleton";
 
+//TODO: Update for an option to add products people already have and an option for allergies/products and materials to avoid
 export default function Form() {
   const [skinType, setSkinType] = useState("");
   const [concerns, setConcerns] = useState([]);
   const [budget, setBudget] = useState("");
   const [prefs, setPrefs] = useState([]);
   const [routine, setRoutine] = useState(null);
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
   const toggleCheckbox = (value, setter, state) => {
@@ -33,10 +36,12 @@ export default function Form() {
     e.preventDefault();
     setError(null);
     setRoutine(null);
+    setLoading(true);
 
     const validationError = validateFormData();
     if (validationError) {
       setError(validationError);
+      setLoading(false);
       return;
     }
 
@@ -57,6 +62,8 @@ export default function Form() {
     } catch (err) {
       console.error(err);
       setError("Something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -78,16 +85,13 @@ export default function Form() {
         selected={concerns}
         onToggle={(val) => toggleCheckbox(val, setConcerns, concerns)}
       />
-
       <BudgetInput value={budget} onChange={(e) => setBudget(e.target.value)} />
-
       <CheckboxGroup
         legend="Select Skincare Preferences"
         options={PREFERENCES}
         selected={prefs}
         onToggle={(val) => toggleCheckbox(val, setPrefs, prefs)}
       />
-
       {error && <p className="text-red-500">{error}</p>}
 
       <button
@@ -96,8 +100,13 @@ export default function Form() {
       >
         Generate Routine
       </button>
-
-      {routine && <Routine routine={routine} />}
+      {loading ? (
+        <div className="mt-4 p-4 border border-gray-300 rounded space-y-6">
+          <Skeleton />
+        </div>
+      ) : (
+        routine && <Routine routine={routine} />
+      )}
     </form>
   );
 }
