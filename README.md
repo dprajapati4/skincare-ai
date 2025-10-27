@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 💆‍♀️ Skincare AI  
+Your personalized skincare assistant powered by AI. Analyze ingredients, discover new products, and build a personalized skincare routine with a clean, fast, and modern UI.
 
-## Getting Started
+🔗 **Live Demo:** [skincare-ai.vercel.app](https://skincare-ai.vercel.app)
 
-First, run the development server:
+---
+
+## 🧑‍💻 About the Project  
+Skincare AI helps users make smarter skincare choices using Groq Cloud’s LLM API.  Skincare AI was built to explore how artificial intelligence can simplify skincare decision-making.  
+It demonstrates my ability to integrate Groq Cloud’s LLM API, build a clean and responsive Next.js + Tailwind CSS UI, and design scalable, real-world applications using TypeScript.  
+
+---
+
+## 📸 Screenshots  
+
+
+### Routine Builder  
+Create and customize your skincare routine — powered by AI suggestions tailored to your skin needs.  
+
+---
+
+## 💡 Key Features    
+- 🧴 **Routine Recommendations** – Get AI-generated skincare routines based on your skin profile.  
+- 💬 **Smart Insights** – Understand potential irritants and compatibility with your skin type.  
+
+---
+
+## 🛠️ Tech Stack  
+**Framework:** Next.js  
+**Language:** TypeScript  
+**Frontend:** React, Tailwind CSS  
+**AI Integration:** Groq Cloud’s LLM API  
+
+---
+
+## 🚀 Getting Started  
+
+### **Prerequisites**  
+- Node.js 18+  
+- npm or yarn
+- Groq Cloud Developer Account  
+
+
+### Installation
+1. Clone the repository
+
+```bash
+git clone https://github.com/yourusername/skincare-ai.git
+cd skincare-ai
+```
+
+2. Install dependencies
+
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+5. Enjoy exploring new skin care routines and products!
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## 📝 License
 
-To learn more about Next.js, take a look at the following resources:
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ⚠️ Disclaimer
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project is for educational and experimental purposes only.
+It is not a medical or dermatological tool and should not replace professional advice.
 
-## Deploy on Vercel
+## 🙏 Acknowledgments
+- The skincare science community for open data and research  
+- Open-source contributors and the React ecosystem  
+- Everyone working to make skincare knowledge more transparent  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📞 Connect with Me
+
+[LinkedIn](https://www.linkedin.com/in/deepprajapati) -
+[Github](https://github.com/dprajapati4/)
