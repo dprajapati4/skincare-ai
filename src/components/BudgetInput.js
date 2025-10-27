@@ -9,7 +9,7 @@ const BudgetInput = ({ value, onChange }) => {
           id="budget"
           value={value}
           onChange={onChange}
-          min="1"
+          min="5"
           required
           className="w-full focus:outline-none"
           placeholder="0.00"
