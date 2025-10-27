@@ -1,6 +1,7 @@
 "use client";
 
 import Form from "../components/Form";
+import Skeleton from "@/components/Skeleton";
 
 export default function Home() {
   return (

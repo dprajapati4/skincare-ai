@@ -30,7 +30,8 @@ const Routine = ({ routine }) => {
               className="border p-3 rounded bg-gray-50 shadow-sm"
             >
               <p>
-                <strong>{product.name}</strong> – <em>{product.step}</em>
+                <strong>{product.name}</strong> – <em>{product.step}</em> -{" "}
+                $<em>{product.price}</em>
               </p>
               <p className="text-sm text-gray-600">{product.reason}</p>
             </li>
