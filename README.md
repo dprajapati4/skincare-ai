@@ -1,7 +1,7 @@
 # 💆‍♀️ Skincare AI  
 Your personalized skincare assistant powered by AI. Analyze ingredients, discover new products, and build a personalized skincare routine with a clean, fast, and modern UI.
 
-🔗 **Live Demo:** [skincare-ai.vercel.app](https://skincare-ai.vercel.app)
+🔗 **Live Demo:** [skincare-ai.vercel.app](https://skincare-ai-dp.vercel.app)
 
 ---
 
