@@ -1,16 +1,18 @@
-# 💆‍♀️ Skincare AI  
+# 💆‍♀️ Skincare AI
+
 Your personalized skincare assistant powered by AI. Analyze ingredients, discover new products, and build a personalized skincare routine with a clean, fast, and modern UI.
 
-🔗 **Live Demo:** [skincare-ai.vercel.app](https://skincare-ai-dp.vercel.app)
+🔗 **Live Demo:** [skincare-ai-dp.vercel.app](https://skincare-ai-dp.vercel.app)
 
 ---
 
-## 🧑‍💻 About the Project  
+## 🧑‍💻 About the Project
+
 Skincare AI helps users make informed skincare decisions by leveraging Groq Cloud’s LLM API. The project explores how AI can simplify the process of understanding products and building effective routines. It features a responsive interface built with Next.js and Tailwind CSS, and is developed with TypeScript for scalability and maintainability.
 
 ---
 
-## 📸 Screenshots  
+## 📸 Screenshots
 
 <div align="center" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
   <div style="flex: 1; max-width: 400px;">
@@ -23,32 +25,34 @@ Skincare AI helps users make informed skincare decisions by leveraging Groq Clou
   </div>
 </div>
 
+---
+
+## 💡 Key Features
+
+- 🧴 **Routine Recommendations** – Get AI-generated skincare routines based on your skin profile.
+- 💬 **Smart Insights** – Understand potential irritants and compatibility with your skin type.
 
 ---
 
-## 💡 Key Features    
-- 🧴 **Routine Recommendations** – Get AI-generated skincare routines based on your skin profile.  
-- 💬 **Smart Insights** – Understand potential irritants and compatibility with your skin type.  
+## 🛠️ Tech Stack
 
----
-
-## 🛠️ Tech Stack  
 **Framework:** Next.js  
 **Language:** TypeScript  
 **Frontend:** React, Tailwind CSS  
-**AI Integration:** Groq Cloud’s LLM API  
+**AI Integration:** Groq Cloud’s LLM API
 
 ---
 
-## 🚀 Getting Started  
+## 🚀 Getting Started
 
-### **Prerequisites**  
-- Node.js 18+  
+### **Prerequisites**
+
+- Node.js 18+
 - npm or yarn
-- Groq Cloud Developer Account  
-
+- Groq Cloud Developer Account
 
 ### Installation
+
 1. Clone the repository
 
 ```bash
@@ -76,7 +80,6 @@ yarn dev
 
 5. Enjoy exploring new skin care routines and products!
 
-
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -87,10 +90,10 @@ This project is for educational and experimental purposes only.
 It is not a medical or dermatological tool and should not replace professional advice.
 
 ## 🙏 Acknowledgments
-- The skincare science community for open data and research  
-- Open-source contributors and the React ecosystem  
-- Everyone working to make skincare knowledge more transparent  
 
+- The skincare science community for open data and research
+- Open-source contributors and the React ecosystem
+- Everyone working to make skincare knowledge more transparent
 
 ## 📞 Connect with Me
 
