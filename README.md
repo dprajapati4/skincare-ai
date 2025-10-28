@@ -6,16 +6,23 @@ Your personalized skincare assistant powered by AI. Analyze ingredients, discove
 ---
 
 ## 🧑‍💻 About the Project  
-Skincare AI helps users make smarter skincare choices using Groq Cloud’s LLM API.  Skincare AI was built to explore how artificial intelligence can simplify skincare decision-making.  
-It demonstrates my ability to integrate Groq Cloud’s LLM API, build a clean and responsive Next.js + Tailwind CSS UI, and design scalable, real-world applications using TypeScript.  
+Skincare AI helps users make informed skincare decisions by leveraging Groq Cloud’s LLM API. The project explores how AI can simplify the process of understanding products and building effective routines. It features a responsive interface built with Next.js and Tailwind CSS, and is developed with TypeScript for scalability and maintainability.
 
 ---
 
 ## 📸 Screenshots  
 
+<div align="center" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+  <div style="flex: 1; max-width: 400px;">
+    <img src="./public/assets/skincare-form.png" alt="Skincare form homepage" width="400">
+    <p><em>Enter your skincare concerns and preferences.</em></p>
+  </div>
+  <div style="flex: 1; max-width: 400px;">
+    <img src="./public/assets/skincare-routine.png" alt="Sample skincare routine" width="400">
+    <p><em>View your skincare routine powered by AI suggestions tailored to your skin needs.  </em></p>
+  </div>
+</div>
 
-### Routine Builder  
-Create and customize your skincare routine — powered by AI suggestions tailored to your skin needs.  
 
 ---
 
