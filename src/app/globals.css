@@ -1,16 +1,29 @@
 @import "tailwindcss";
 
-
 @theme {
   /* Background colors */
-  --color-shell: #F9F6F4;        /* light, neutral background */
-  --color-blush: #F2D1CC;        /* soft blush accent */
-  --color-mauve: #7B5E7B;        /* deep tone for headings */
-  --color-sand: #F4F1EC;         /* secondary background */
-  
+  --color-shell: #f9f6f4; /* light, neutral background */
+  --color-blush: #f2d1cc; /* soft blush accent */
+  --color-mauve: #7b5e7b; /* deep tone for headings */
+  --color-sand: #f4f1ec; /* secondary background */
+
   /* Text colors */
-  --color-ink: #2B2B2B;          /* primary text */
-  
+  --color-ink: #2b2b2b; /* primary text */
+
   /* Accent colors */
-  --color-gold: #EBD9A9;         /*  gold for buttons, hover, and accents */
+  --color-gold: #ebd9a9; /*  gold for buttons, hover, and accents */
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: shimmer 3s ease-in-out infinite alternate;
 }
